@@ -93,7 +93,7 @@ resource "aws_security_group_rule" "ditwl-sr-internet-to-ecs-color-app-8080" {
 }
 
 # Allow all outbound traffic to Internet
-resource "aws_security_group_rule" "all_outbund" {
+resource "aws_security_group_rule" "ditwl-sr-all-outbund" {
   security_group_id = aws_security_group.ditwl-sg-ecs-color-app.id
   type              = "egress"
   from_port         = "0"
